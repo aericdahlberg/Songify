@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout"
+    android:background="@drawable/gradient_list"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="169dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#009688"
+        android:rotationX="17"
+        android:rotationY="-13"
+        android:text="@string/search_song_compatability"
+        app:iconTint="#009688"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/teal_700"
+        tools:visibility="visible" />
+
+    <com.skyfishjy.library.RippleBackground
+        android:id="@+id/ripple"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rb_radius="34dp"
+        app:rb_rippleAmount="4"
+        app:rb_duration="3000"
+        app:rb_scale="6">
+
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="231dp"
+            android:layout_height="267dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="91dp"
+            android:adjustViewBounds="true"
+            android:background="#00FFFFFF"
+            android:maxWidth="42dp"
+            android:maxHeight="42dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_modified"
+            android:translationY="150sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.skyfishjy.library.RippleBackground>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

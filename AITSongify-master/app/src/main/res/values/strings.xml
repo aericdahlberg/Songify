@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SongifyAIT</string>
+    <string name="search_song_compatability">Search Song Compatability</string>
+    <string name="similarity">Similarity:</string>
+</resources>
